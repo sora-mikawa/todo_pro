@@ -1,0 +1,22 @@
+# Vue / Node
+todo_vue/node_modules/
+todo_vue/dist/
+todo_vue/dist-ssr/
+*.local
+
+# Python / FastAPI
+todo_fastapi/venv/
+todo_fastapi/__pycache__/
+todo_fastapi/*.pyc
+
+# 環境変数
+.env
+.env.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# OS
+.DS_Store

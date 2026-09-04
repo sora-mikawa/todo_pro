@@ -198,9 +198,8 @@ def show_tasks(current_user: int = Depends(get_current_user)):
         if 'cur' in locals(): cur.close()
         if 'conn' in locals(): conn.close()
 
-# -----------------------
+
 # タスク更新（ログイン必須）
-# -----------------------
 @app.put("/tasks/{task_id}")
 def update_task(
     task_id: int = Path(..., description="更新対象のタスクID"),

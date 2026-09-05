@@ -11,9 +11,8 @@ from datetime import datetime, timedelta
 from jose import JWTError, jwt
 from fastapi import Path
 
-# -----------------------
+
 # 環境変数読み込み
-# -----------------------
 load_dotenv()
 db_password = os.environ.get("PG_PASSWORD")
 

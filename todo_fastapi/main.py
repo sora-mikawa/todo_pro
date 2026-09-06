@@ -24,9 +24,8 @@ DB_CONFIG = {
     "port": 5432,
 }
 
-# -----------------------
+
 # FastAPI & CORS設定
-# -----------------------
 app = FastAPI(title="Todo API")
 
 app.add_middleware(

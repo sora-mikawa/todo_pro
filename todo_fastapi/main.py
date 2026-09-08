@@ -70,9 +70,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
     except JWTError:
         raise HTTPException(status_code=401, detail="認証エラー")
 
-# -----------------------
 # Pydantic モデル
-# -----------------------
 class UserCreate(BaseModel):
     email: str
     password: str

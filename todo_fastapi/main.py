@@ -86,9 +86,8 @@ class TaskCreate(BaseModel):
     priority: int
     deadline: str | None = None  # YYYY-MM-DD
 
-# -----------------------
+
 # ユーザー登録
-# -----------------------
 @app.post("/users/")
 def register_user(user: UserCreate):
     try:

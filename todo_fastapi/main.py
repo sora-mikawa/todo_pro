@@ -109,9 +109,8 @@ def register_user(user: UserCreate):
         if 'cur' in locals(): cur.close()
         if 'conn' in locals(): conn.close()
 
-# -----------------------
+
 # ログイン
-# -----------------------
 @app.post("/login/")
 def login(user: UserLogin):
     try:

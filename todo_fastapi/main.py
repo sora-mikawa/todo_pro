@@ -131,9 +131,7 @@ def login(user: UserLogin):
         if 'cur' in locals(): cur.close()
         if 'conn' in locals(): conn.close()
 
-# -----------------------
 # タスク登録（ログイン必須）
-# -----------------------
 @app.post("/tasks/")
 def insert_task(task: TaskCreate, current_user: int = Depends(get_current_user)):
     try:

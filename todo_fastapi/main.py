@@ -155,9 +155,8 @@ def insert_task(task: TaskCreate, current_user: int = Depends(get_current_user))
         if 'cur' in locals(): cur.close()
         if 'conn' in locals(): conn.close()
 
-# -----------------------
+
 # タスク一覧取得（ログイン必須）
-# -----------------------
 @app.get("/tasks/")
 def show_tasks(current_user: int = Depends(get_current_user)):
     try:

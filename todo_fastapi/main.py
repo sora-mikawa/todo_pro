@@ -25,7 +25,7 @@ DB_CONFIG = {
 }
 
 
-# FastAPI&CORS設定
+# FastAPI & CORS設定
 app = FastAPI(title="Todo API")
 
 app.add_middleware(
